@@ -1,0 +1,24 @@
+Ignora i file temporanei di Python
+
+pycache/
+*.py[cod]
+
+Ignora l'ambiente virtuale (pesante e inutile da caricare online)
+
+.venv/
+venv/
+env/
+
+Ignora le impostazioni personali di VS Code
+
+.vscode/
+
+Ignora file con dati sensibili
+
+.env
+*.pdf
+*.csv
+__pycache__/
+*.pdf
+.env
+venv/
