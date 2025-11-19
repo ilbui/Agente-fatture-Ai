@@ -72,6 +72,11 @@ def analyze_invoice_ollama(text, model_name="phi3"):
     # ma 3000 caratteri vanno bene. Il prompt è ottimizzato per modelli piccoli.
     prompt = f"""
     Sei un assistente amministrativo. Analizza questa fattura ed estrai i dati in JSON.
+    ATTENZIONE:
+    - Il FORNITORE è l'azienda che EMETTE la fattura spesso si trova vicino al logo).
+    - Il CLIENTE è chi RICEVE la fattura (spesso preceduto da 'Spett.le', 'Bill to', 'Destinatario').
+    - NON usare il nome del Cliente come Fornitore.
+    Fai attenzione agli importi quelli della fattura non possono essere negativi
     
     Testo Fattura:
     {text[:3000]}
