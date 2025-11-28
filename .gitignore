@@ -9,3 +9,5 @@ __pycache__/
 
 # Ignora l'ambiente virtuale
 .venv/
+*.zip
+*.zip
