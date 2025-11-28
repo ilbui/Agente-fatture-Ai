@@ -1,24 +1,11 @@
-Ignora i file temporanei di Python
+# Ignora le cartelle di compilazione
+dist/
+build/
+*.spec
 
-pycache/
-*.py[cod]
-
-Ignora l'ambiente virtuale (pesante e inutile da caricare online)
-
-.venv/
-venv/
-env/
-
-Ignora le impostazioni personali di VS Code
-
-.vscode/
-
-Ignora file con dati sensibili
-
-.env
-*.pdf
-*.csv
+# Ignora i file temporanei di Python
 __pycache__/
-*.pdf
-.env
-venv/
+*.pyc
+
+# Ignora l'ambiente virtuale
+.venv/
