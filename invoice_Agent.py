@@ -54,7 +54,7 @@ def is_address_line(line: str) -> bool:
     return any(kw in line_lower for kw in address_keywords)
 
 # -------------------------------------------------------------------
-# LOGICA DI ESTRAZIONE
+# LOGICA DI ESTRAZIONE fatture
 # -------------------------------------------------------------------
 
 def parse_invoice_smart(text: str) -> dict:
